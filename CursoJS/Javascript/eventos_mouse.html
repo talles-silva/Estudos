@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <script>
+      function acao() {
+        alert("Elemento foi clicado");
+      }
+      function acao2() {
+        alert("O cursor do mouse deixou a região do elemento");
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      onclick="acao()"
+      onmouseout="acao2()"
+      style="background: #ccc; width: 150px; height: 150px"
+    ></div>
+  </body>
+</html>

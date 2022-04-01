@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <script>
+      var janela;
+
+      function abrirPopUp() {
+        janela = window.open(
+          "http://www.google.com.br",
+          "nova_janela",
+          "width=200, height=100"
+        );
+      }
+
+      function fecharPopUp() {
+        janela.close();
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="abrirPopUp()">Abrir Janela</button>
+    <button onclick="fecharPopUp()">Fechar Janela</button>
+    <button onclick="window.print()">Imprimir Página</button>
+  </body>
+</html>

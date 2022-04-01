@@ -1,0 +1,2 @@
+export * from './calculadora.component';
+

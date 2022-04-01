@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- suporte a mobile -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Visualizar itens</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Projeto final</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Inicial</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Projetos <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a [routerLink]="['/dashboard']">
+                Dashboard
+              </a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <a [routerLink]="['/calculadora']">
+                Calculadora
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/conversor-moedas']">
+                Conversor de moedas
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/tarefas']">
+                Gerenciador de tarefas
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/jogo-da-velha']">
+                Jogo da velha
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>

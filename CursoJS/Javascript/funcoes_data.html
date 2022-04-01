@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <script>
+      /*
+      var data = new Date();
+
+      //document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+
+      //01/12/2021
+
+      // adicionar / remover dias
+      document.write(data.toString());
+      data.setDate(data.getDate() + 1);
+      document.write("<hr />");
+      document.write(data.toString());
+      document.write("<br></br><hr />");
+      // adicionar / remover meses
+      document.write(data.toString());
+      data.setMonth(data.getMonth() + 1);
+      document.write("<hr />");
+      document.write(data.toString());
+      document.write("<br></br><hr />");
+      // adicionar / remover anos
+      document.write(data.toString());
+      data.setFullYear(data.getFullYear() + 1);
+      document.write("<hr />");
+      document.write(data.toString());
+      */
+
+      //01/12/2021
+      var data1 = new Date(2021, 1, 11);
+
+      //25/12/2021
+      var data2 = new Date(2021, 25, 11);
+
+      document.write(data1.toString());
+      document.write("<hr />");
+      document.write(data1.toString());
+      document.write("<br></br><hr />");
+      // converter datas para algo que possamos calcular
+      document.write(data1.getTime());
+      document.write("<hr />");
+      document.write(data1.getTime());
+
+      // 1 de janeiro de 1970
+
+      //encontrar a quantidade me milessegundo entre data1 e data2
+      var milessegundos_entre_datas = Math.abs(
+        data1.getTime() - data2.getTime()
+      );
+      document.write("<hr />");
+      document.write(milessegundos_entre_datas);
+
+      //1 dia tem 24 horas, cada hora tem 60 minutos,
+      //cada minuto tem 60 segundos, e cada segundo tem 1000 milissegundos
+      //então quantos milissegundos existem em um dia?
+      var milessegundos_por_dia = 1 * 24 * 60 * 60 * 1000;
+
+      document.write("<br></br><hr />");
+      document.write(" 1 dia tem: " + milessegundos_por_dia + " milissegundos");
+      document.write("<hr />");
+      document.write(
+        "A diferença entre data1 e data2 é de: " +
+          Math.ceil(milessegundos_entre_datas / milessegundos_por_dia) +
+          " dia(s)"
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

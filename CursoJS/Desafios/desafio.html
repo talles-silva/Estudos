@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio nacionalidade</title>
+  </head>
+  <body>
+    <h1>Nacionalidade:</h1>
+    País de origem: <input type="text" name="txt1" id="txt1" />
+    <input type="button" value="Confirmar" onclick="verificar()" />
+    <div id="res"></div>
+    <script>
+      function verificar() {
+        var pais = window.document.querySelector("input#txt1");
+        var res = window.document.querySelector("div#res");
+        var vel = pais.value;
+        res.innerHTML = `<p>Seu país de origem é ${vel}!</p>`;
+        if (vel == "Brasil") {
+          res.innerHTML += `<p>Você é brasileiro!</p>`;
+        } else {
+          res.innerHTML += `<p>Você é estrangeiro!</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>

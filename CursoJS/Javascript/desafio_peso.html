@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <script>
+      var nome = prompt("Digite o seu nome:");
+      var altura = prompt("Digite sua altura em centímetros:");
+      var peso = prompt("Digite o seu peso:");
+
+      altura = parseFloat(altura);
+      altura = altura / 100;
+      peso = parseFloat(peso);
+
+      var massa = peso / (altura * altura);
+
+      massa = parseFloat(massa);
+
+      var classificacao = "";
+
+      if (massa < 16) {
+        classificacao = "baixo peso muito grave";
+      } else if (massa >= 16 && massa <= 16.99) {
+        classificacao = "baixo peso grave";
+      } else if (massa >= 17 && massa <= 18.49) {
+        classificacao = "baixo peso";
+      } else if (massa >= 18.5 && massa <= 24.99) {
+        classificacao = "peso normal";
+      } else if (massa >= 25 && massa <= 29.99) {
+        classificacao = "sobrepeso";
+      } else if (massa >= 30 && massa <= 34.99) {
+        classificacao = "obesidade grau I";
+      } else if (massa >= 35 && massa <= 39.99) {
+        classificacao = "obesidade grau II";
+      } else if (massa >= 40) {
+        classificacao = "obesidade grau III";
+      }
+
+      document.write(
+        nome +
+          " possui índice de massa corporal igual a " +
+          massa +
+          " sendo classificado como " +
+          classificacao
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

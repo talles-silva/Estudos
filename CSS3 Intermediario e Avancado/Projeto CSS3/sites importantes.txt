@@ -1,0 +1,8 @@
+html entities: https://www.w3schools.com/html/html_entities.asp
+css borders: https://www.w3schools.com/css/css_border.asp
+códigos de cores html online: https://html-color-codes.info/Codigos-de-Cores-HTML/
+css fonts: https://www.w3schools.com/css/css_font.asp
+css fontes seguras: https://www.w3schools.com/cssref/css_websafe_fonts.asp
+css fontes seguras exemplos: https://www.w3schools.com/cssref/css_fonts_fallbacks.asp
+estilos de texto: https://www.w3schools.com/cssref/pr_font_font.asp
+css background: https://www.w3schools.com/css/css_background.asp

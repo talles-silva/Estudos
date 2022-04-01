@@ -1,0 +1,166 @@
+<h1>Calculadora</h1>
+<div class="container-fluid">
+  <form>
+    <div class="row">
+      <div class="col-xs-8 col-sm-6 col-md-4">
+        <div 
+          class="text-center bg-primary img-rounded kz-pad-20">
+          <div class="row">
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                (click)="limpar()"
+                class="btn btn-danger kz-btn">C
+              </button>
+            </div>
+            <div class="col-xs-9">
+              <input 
+                type="text" 
+                class="form-control text-right kz-input-text"
+                id="display" 
+                name="display" 
+                [value]="display"
+                readonly>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('7')"
+                id="btn7">7
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('8')"
+                id="btn8">8
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('9')"
+                id="btn9">9
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn" 
+                (click)="definirOperacao('/')"
+                id="btnDivisao">/
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('4')"
+                id="btn4">4
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('5')"
+                id="btn5">5
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('6')"
+                id="btn6">6
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn"  
+                (click)="definirOperacao('*')"
+                id="btnMIltiplicacao">*
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('1')"
+                id="btn1">1
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('2')"
+                id="btn2">2
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('3')"
+                id="btn3">3
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn" 
+                (click)="definirOperacao('-')"
+                id="btnSubtracao">-
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('0')"
+                id="btn0">0
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn" 
+                (click)="adicionarNumero('.')"
+                id="btnDecimal">.
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-success kz-btn" 
+                (click)="calcular()"
+                id="btnCalcular">=
+              </button>
+            </div>
+            <div class="col-xs-3">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn" 
+                (click)="definirOperacao('+')"
+                id="btnSoma">+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

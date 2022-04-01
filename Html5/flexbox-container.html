@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			#conteudo{
+				background: #dcdcdc;
+				height: 600px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+
+				/*
+				row|row-reverse|column|column-reverse
+				*/
+				/*flex-direction: row;*/
+
+				/*
+				nowrap|wrap|wrap-reverse
+				*/
+				/*flex-wrap: nowrap;*/
+
+				/*
+				flex-start|flex-end|center|space-between|space-around
+				*/
+				/*justify-content: space-around;*/
+
+				/*
+				stretch|center|flex-start|flex-end|baseline
+				*/
+				/*align-items: flex-start;*/
+			}
+
+			.item{
+				/*width: 200px;*/
+				height: 100px;
+				margin: 10px;
+				background: white;
+				border: 1px solid gray;
+				
+				/*Define proporção de espaço ocupado por um item*/
+				flex-grow: 0;
+
+				/*Define a capacidade de redução de tamanho do item.*/
+				flex-shrink: 1;
+
+				/*Indica o tamanho inicial do flex item antes da distribuição do espaço restante.*/
+				flex-basis: 100px;
+			}
+
+			.item1{
+				/*flex-grow: 1;*/
+				/*flex-shrink: 1;*/
+			}
+
+			.item2{
+				flex-grow: 1;
+				/*flex-shrink: 2;*/
+			}
+
+			.item3{
+				flex-grow: 2;
+				/*flex-shrink: 5;*/
+			}
+
+			/*.ordem1{
+				order: 1;
+			}
+
+			.ordem2{
+				order: 2;
+			}
+
+			.ordem3{
+				order: 3;
+			}
+
+			.ordem4{
+				order: 4;
+			}
+
+			.ordem{
+				order: 0;
+			}*/
+
+		</style>
+
+	</head>
+	<body>
+
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+			<div class="item item1">01</div>
+			<div class="item item2">02</div>
+			<div class="item item3">03</div>
+			<div class="item ordem">04</div>
+		</div>
+
+	</body>
+</html> 
